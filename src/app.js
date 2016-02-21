@@ -11,7 +11,7 @@ bla();
 })
 class egghead{
   constructor() {
-
+    this.message = 'cba';
   }
 }
 

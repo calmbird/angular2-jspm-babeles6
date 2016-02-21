@@ -5,33 +5,14 @@ SystemJS.config({
     "github:*/*.json"
   ],
   transpiler: "plugin-babel",
-  "traceurOptions": {
-    "annotations" : true,
-    "memberVariables" : true,
-    "types" : true
-  },
   "babelOptions": {
     "plugins": [
-      "babel-plugin-angular2-annotations",
-      "babel-plugin-transform-class-properties",
-      "babel-plugin-transform-flow-strip-types",
       "babel-plugin-transform-decorators-legacy"
     ],
     blackList: [
 
     ],
- /*   "presets": [
-      "babel-preset-es2015"
-    ],*/
-    "stage" : 1,
-    "optional": [
-      "runtime",
-      "optimisation.modules.system",
-      "es7.decorators",
-      "es7.annotations",
-      "es7.classProperties",
-      "optimisation.modules.system"
-    ]
+    "stage" : 1
   },
 
   map: {
